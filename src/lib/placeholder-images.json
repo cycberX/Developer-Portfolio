@@ -33,14 +33,20 @@
     {
       "id": "project-2",
       "description": "A screenshot of a mobile application.",
-      "imageUrl": "https://res.cloudinary.com/quantumdb/image/upload/v1765889446/y16j464jgbliuwxywltt.png",
+      "imageUrl": "/site-2.png",
       "imageHint": "mobile app"
     },
     {
       "id": "project-3",
       "description": "A visualization of a data analysis project.",
-      "imageUrl": "https://res.cloudinary.com/quantumdb/image/upload/v1765889445/xsuyz6gfsdar3hlfbrfc.png",
+      "imageUrl": "/site-3.png",
       "imageHint": "data graph"
+    },
+    {
+      "id": "project-4",
+      "description": "NeuroDesk AI agent for desktop automation.",
+      "imageUrl": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "desktop code automation"
     },
     {
       "id": "certificate-1",

@@ -1,24 +1,63 @@
+"use client";
+
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Handshake, Mail } from "lucide-react";
+import { portfolioData } from "@/lib/data";
 
 export default function Cta() {
+  const scrollToCollaborate = () => {
+    const el = document.getElementById("collaborate");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="bg-primary/10 dark:bg-card rounded-lg p-8 md:p-12 text-center">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl font-headline text-primary">
-            Have a project in mind?
-          </h2>
-          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            I'm ready to bring your ideas to life. Let's collaborate and create something amazing together.
-          </p>
-          <div className="mt-8">
-            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+        <div className="bg-card border border-border rounded-2xl p-8 sm:p-12 md:p-16 text-center max-w-4xl mx-auto shadow-sm">
+          <div className="space-y-3 max-w-2xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight font-headline text-foreground">
+              Have a Project or Idea in Mind?
+            </h2>
+            <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
+              Whether you are looking to build a high-performance web app, discuss open-source collaboration,
+              or explore full-time software engineering roles, I&apos;m ready to connect.
+            </p>
+          </div>
+
+          <div className="mt-8 flex flex-wrap justify-center items-center gap-3">
+            <Button
+              size="lg"
+              onClick={scrollToCollaborate}
+              className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-6 shadow-sm active:scale-[0.98] transition-all"
+            >
+              <Handshake className="mr-2 h-4 w-4" />
+              Collaborate With Me
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              asChild
+              className="hover:bg-secondary font-semibold px-6"
+            >
               <Link href="/contact">
-                Let's Talk <ArrowRight className="ml-2 h-5 w-5" />
+                <Mail className="mr-2 h-4 w-4" />
+                Contact Directly
               </Link>
             </Button>
+          </div>
+
+          <div className="mt-6 text-xs text-muted-foreground">
+            Direct Email:{" "}
+            <a
+              href={`mailto:${portfolioData.student.email}`}
+              className="text-primary hover:underline font-semibold"
+            >
+              {portfolioData.student.email}
+            </a>{" "}
+            • Satara, Maharashtra, India
           </div>
         </div>
       </div>
