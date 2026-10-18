@@ -64,7 +64,7 @@ export const socialAccounts: SocialAccount[] = [
     id: "facebook",
     name: "Facebook",
     url: "https://www.facebook.com/p/Sanskar-Bandgar-100068488796065/", // Add verified Facebook URL here to enable
-    enabled: true,
+    enabled: false,
     icon: Facebook,
     description: "Social updates and community posts",
   },
