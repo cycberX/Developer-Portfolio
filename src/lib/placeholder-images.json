@@ -3,13 +3,13 @@
     {
       "id": "hero-background",
       "description": "Abstract background image for hero section",
-      "imageUrl": "/student.png",
+      "imageUrl": "https://avatars.githubusercontent.com/u/124874792?v=4",
       "imageHint": "abstract background"
     },
     {
       "id": "student-profile-1",
       "description": "A portrait of a student.",
-      "imageUrl": "/student.png",
+      "imageUrl": "https://avatars.githubusercontent.com/u/124874792?v=4",
       "imageHint": "person portrait"
     },
     {
