@@ -3,7 +3,7 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
 export const viewport: Viewport = {
-  themeColor: "#e11d48",
+  themeColor: "#3e1de1ff",
   width: "device-width",
   initialScale: 1,
 };
